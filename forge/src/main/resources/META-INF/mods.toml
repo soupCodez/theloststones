@@ -1,35 +1,36 @@
 modLoader = "javafml"
-loaderVersion = "[43,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+loaderVersion = "[40,)"
+license = "All rights reserved"
+issueTrackerURL = "https://github.com/soupCodez/TheLostStones/issues"
 
 [[mods]]
-modId = "examplemod"
+modId = "theloststones"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
+displayName = "TheLostStones"
+authors = "Soupp"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Infintity Stones for Minecraft 1.19+!
 '''
-#logoFile = ""
+itemIcon = "minecraft:totem_of_undying"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/theloststones"
 
-[[dependencies.examplemod]]
+[[dependencies.theloststones]]
 modId = "forge"
 mandatory = true
-versionRange = "[43,)"
+versionRange = "[40,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.theloststones]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.19.2,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
-modId = "architectury"
+[[dependencies.theloststones]]
+modId = "palladium"
 mandatory = true
-versionRange = "[6.2.43,)"
+versionRange = "[4.0.0,)"
 ordering = "AFTER"
 side = "BOTH"

@@ -1,15 +1,22 @@
 package me.soupcodez.theloststones.forge;
 
-import dev.architectury.platform.forge.EventBuses;
-import me.soupcodez.theloststones.TheLostStones;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.threetag.palladiumcore.forge.PalladiumCoreForge;
+import net.threetag.palladiumcore.util.Platform;
+import me.soupcodez.theloststones.TheLostStones;
+import me.soupcodez.theloststones.TheLostStonesClient;
 
 @Mod(TheLostStones.MOD_ID)
+@Mod.EventBusSubscriber(modid = TheLostStones.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TheLostStonesForge {
+
     public TheLostStonesForge() {
-        // Submit our event bus to let architectury register our content on the right time
-        EventBuses.registerModEventBus(TheLostStones.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
+        PalladiumCoreForge.registerModEventBus(TheLostStones.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
         TheLostStones.init();
+
+        if (Platform.isClient()) {
+            TheLostStonesClient.init();
+        }
     }
 }

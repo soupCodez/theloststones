@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "theloststones",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "TheLostStones",
+  "description": "Channel the power of the gods and serve their will!",
   "authors": [
-    "Me!"
+    "Lucraft"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/theloststones",
+    "sources": "https://github.com/ThreeTAG/TheLostStones"
   },
-  "license": "MIT",
-  "icon": "assets/examplemod/icon.png",
+  "license": "All rights reserved",
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "me.soupcodez.theloststones.fabric.TheLostStonesFabric"
-    ]
   },
+  "mixins": [
+    "theloststones.mixins.json",
+    "theloststones-common.mixins.json"
+  ],
   "depends": {
     "fabric": "*",
     "minecraft": ">=1.19.2",
-    "architectury": ">=6.2.43"
+    "palladium": ">=4.0.0-Pre86"
   }
 }
