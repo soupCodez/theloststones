@@ -9,6 +9,9 @@ bin/
 libs/
 forge/run/*
 fabric/run/*
+common/.gradle/
+forge/.gradle/
+fabric/.gradle/
 
 .classpath
 .project
@@ -21,7 +24,7 @@ classes/
 
 run/*
 
-!run/addonpacks
+!run/addonpacks/
 !run/addonpacks/*
 
-run/mods
+run/mods/
