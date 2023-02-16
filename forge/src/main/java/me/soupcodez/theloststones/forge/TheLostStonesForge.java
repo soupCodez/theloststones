@@ -1,6 +1,5 @@
 package me.soupcodez.theloststones.forge;
 
-import dev.architectury.platform.forge.EventBuses;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.threetag.palladiumcore.forge.PalladiumCoreForge;
@@ -14,7 +13,6 @@ public class TheLostStonesForge {
 
     public TheLostStonesForge() {
         PalladiumCoreForge.registerModEventBus(TheLostStones.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
-        EventBuses.registerModEventBus(TheLostStones.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
 
         TheLostStones.init();
 
